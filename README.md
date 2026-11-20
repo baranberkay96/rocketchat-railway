@@ -1,5 +1,7 @@
 # Deploy and Host Rocket.Chat with Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/rocketchat-8-team-chat?referralCode=20H68q)
+
 Rocket.Chat is an open-source team chat platform: channels, direct messages, threads, file sharing, video calls and integrations, on a server you control. This community template runs Rocket.Chat 8.9.1 (Community edition) with a MongoDB 8.0 replica set, NATS for scaling, file uploads stored in a Railway Bucket, and daily database backups.
 
 ## About Hosting Rocket.Chat
