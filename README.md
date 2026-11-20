@@ -57,7 +57,7 @@ Rocket.Chat is a Node.js application that needs MongoDB running as a replica set
 
 **Custom domain.** Add it in the Rocket.Chat service's Settings → Networking and set `ROOT_URL` to `https://{your-domain}`.
 
-**Resources and plans.** Rocket.Chat is the heaviest part: plan for 0.6-1 GB of RAM for Rocket.Chat, 0.2-0.4 GB for MongoDB and a few MB for NATS, about $10-15 a month at Railway's usage prices for a small team. Rocket.Chat needs more than the 1 GB per service that Trial allows once in use, so use Hobby or Pro.
+**Resources and plans.** Measured on a test deploy: Rocket.Chat 0.6-0.7 GB of RAM idle, MongoDB 0.3-0.4 GB, NATS a few MB, so about 1 GB in total (roughly $10-12 a month at Railway's usage prices for a small team). Rocket.Chat is close to the 1 GB per-service Trial limit before anyone uses it, so plan on Hobby or Pro.
 
 **Scaling.** Rocket.Chat has no volume, so you can raise its replica count; instances coordinate over NATS. Give MongoDB more memory before adding replicas.
 

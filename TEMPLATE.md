@@ -35,7 +35,16 @@ Market (2026-11): "Rocket Chat" (6.5.3, `mongo` unpinned) ≈85 active; "Rocket.
 
 ## Resources
 
-To be measured on the test deploy.
+Measured on the 2026-11-20 test deploy (first 20-30 min, after a login, a message, a file upload and one backup run):
+
+| Service | RAM |
+|---|---|
+| Rocket.Chat | 0.58-0.72 GB |
+| MongoDB | 0.31-0.38 GB |
+| NATS | 0.004 GB |
+| MongoDB Backup | cron, 0 between runs |
+
+Total about 1.0-1.1 GB, roughly $10-12 a month in RAM at usage prices. Rocket.Chat alone stays under 1 GB idle but has little headroom, so Hobby is the realistic minimum plan; Trial is too tight once a few users are active.
 
 Railway prices: RAM $10/GB-month, vCPU $20/vCPU-month, volume $0.15/GB-month.
 
